@@ -1,0 +1,311 @@
+.skip a{
+    position: absolute;
+    top: -40px;
+}
+
+.skip a:focus{
+    top: 20px
+}
+
+nav {
+    background-color: #00274C;
+    padding: 40px 15px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+nav ul li a.current-page {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFCB05;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: underline;
+    color: white;
+    padding: 10px 8px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00274C;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+main div:first-of-type {
+    grid-column: 1 / -1;
+    background-color: white;
+    color: #00274C;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+main div{
+    display: block;
+    background: #00274C;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+
+main div h2{
+    text-align: center;
+    color: #FFCB05;
+    font-size: 1rem;
+}
+
+main div ul{
+    padding: 20px;
+}
+
+main div h3{
+    text-align: left;
+    color: #FFCB05;
+    font-size: .9rem;
+}
+
+main div a{
+    text-decoration: underline;
+    color: white;
+}
+
+main section h2{
+    text-align: center;
+    color: #FFCB05;
+    font-size: 1rem;
+}
+
+main section {
+    background: #00274C;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 20px 20px;
+    font-size: .9rem;
+}
+
+main section article h3{
+    color: #FFCB05;
+}
+
+main section article figure{
+    text-align: center;
+    font-size: .75rem;
+}
+
+main section ol {
+    padding: 0px 20px;
+    align-content: center;
+}
+
+main img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+figure {
+    text-align: center;
+}
+
+footer {
+    background-color: #00274C;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-top: 5px solid #FFCB05;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+}
+
+.footer-links ul li {
+    margin: 8px 0;
+}
+
+footer a {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer .copyright {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.umlogo{
+    width: 50%;
+    align-items: center;
+    grid-column: 1/-1;
+}
+
+#life-outside-classroom ul{
+    padding: 20px
+}
+
+@media all and (min-width: 800px){
+    main {
+        gap: 10px;
+        padding: 20px;
+        display: grid;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        align-items: start;
+        align-items: stretch;
+    }
+
+    main h1{
+        font-size: 2.5rem;
+    }
+
+    main section h2{
+        font-size: 1.5rem;
+    }
+
+    nav{
+        font-size: 1.5rem;
+    }
+
+    main section{
+        padding: 30px 30px;
+        font-size: 1.2rem;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    main div {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 30px 30px;
+    }
+
+    main div h2{
+        font-size: 1.5rem;
+    }
+
+    main div p{
+        font-size: 1rem;
+    }
+
+    #resource-finder {
+    grid-column: auto;
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+    #life-outside-classroom {
+        grid-column: 1 / -1;
+    }
+
+    #page-title {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+
+    #intro {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
+
+    #deadlines {
+        grid-column: 1;
+        grid-row: 3;
+      }
+    #advisors {
+        grid-column: 2;
+        grid-row: 3 / span 2;
+      }
+    #connect-advisor {
+        grid-column: 1;
+        grid-row: 4;
+        width: 100%;
+        max-width: unset;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #firstgen-title {
+        grid-column: 1 / -1;
+        grid-row: 1;
+      }
+
+      #firstgen-history {
+        grid-column: 1 / -1;
+        grid-row: 2;
+      }
+
+      #define-firstgen {
+        grid-column: 1;
+        grid-row: 3;
+      }
+
+      #to-be-firstgen {
+        grid-column: 1;
+        grid-row: 4;
+      }
+
+      #mentorship {
+        grid-column: 2;
+        grid-row: 3 / span 2; /* Stretches across rows 3 and 4 */
+      }
+}
